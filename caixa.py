@@ -4,14 +4,23 @@ produtoevalor = {"arroz": 5.50, "feijao": 4.50, "oleo": 8.00}
 
 produto = ""
 
-listaproduto = []
+carrinho = []
 
-valor = 0
+valor = []
+
+total = []
 
 
-while produtoevalor != "sair":
+while True:
    produto = input("Digite o nome do produto: ")
+   if produto == "sair":
+      for itens in carrinho:
+         print(itens)
+      break
    valor = produtoevalor.get(produto)
+   carrinho.extend([produto, valor])
+   total.append(valor)
 
-   print (f"R$ {valor:.2f}")
-
+   
+   print(f"TOTAL: R$ {sum(total):.2f}")
+   
