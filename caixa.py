@@ -1,6 +1,6 @@
 # Nesse projeto será criado um simulador de caixa de supermercado simples sem DB, usaremos apenas python simples.
 
-produtoevalor = {"arroz": 5.50, "feijao": 4.50, "oleo": 8.00}
+produtoevalor = {"arroz": 5.50, "feijao": 4.50, "oleo": 8.00, "macarrao": 3.75}
 
 produto = ""
 
