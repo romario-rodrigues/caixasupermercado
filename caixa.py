@@ -10,6 +10,8 @@ valor = []
 
 total = []
 
+quantiitens = [] 
+
 
 while True:
    
@@ -22,13 +24,18 @@ while True:
    else:
     quantidade = int(input("Digite a quantidade: "))
     valor = produtoevalor.get(produto)
-    carrinho.extend([produto, valor])
+    carrinho.extend([produto])
     total.append(quantidade * valor)
+    quantiitens.append(quantidade)
     
 
     
     print(f"TOTAL: R$ {sum(total):.2f}")
 
-for compra in carrinho:
-  print(compra)
+print("=-=" * 5,  "CUPOM FISCAL", "=-=" * 5)
+
+for c in range(0, len(quantiitens)):
+  print(quantiitens[c], carrinho[c])
+
+
 print(f"Total a Pagar R$ : {sum(total):.2f}")
