@@ -39,7 +39,7 @@ while True:
 # Cabeçalho do Cupom fiscal
 print("-" * 30)
 print("SUPERMERCADO FANTASIA\n")
-print("RUA INVENTÀRIO,BAIRRO: CENTRO, Nº 10\nSÂO JOSÉ- SC\n")
+print("RUA INVENTÁRIO,BAIRRO: CENTRO, Nº 10\nSÂO JOSÉ- SC\n")
 print("CNPJ: 89.455.000/003-00")
 print("-" * 30)
 
@@ -54,5 +54,5 @@ for c in range(0, len(quantiitens)):
 print("-" * 30, "\n")
 print(f"TOTAL R$: {sum(total):.2f}")
 
-#Rodapé do cupom fiscal
+#Rodapé do cupom fiscal para informações
 print("-" * 30)
