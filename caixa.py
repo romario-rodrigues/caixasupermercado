@@ -22,7 +22,7 @@ while True:
    if produto == "sair":
       break
    #Aqui o operador de caixa entra com quantidade, o valor do produto é salvo na lista valor pegando a chave do diciónario produtoevalor
-   #O produto é add na lista carinnho, o total é add na lista total e quantiitens é uma lista que salvo a quantida de cada produto para saida do cupom fiscal
+   #O produto é add na lista carrinho, o total é add na lista total e quantiitens é uma lista que salvo a quantida de cada produto para saida do cupom fiscal
    else:
     quantidade = int(input("Digite a quantidade: "))
     valor = produtoevalor.get(produto)
