@@ -1,4 +1,4 @@
-# Nesse projeto sera criado um simulador de caixa de supermercado simples sem DB, usaremos apenas python simples.
+# Nesse projeto será criado um simulador de caixa de supermercado simples sem DB, usaremos apenas python simples.
 
 produtoevalor = {"arroz": 5.50, "feijao": 4.50, "oleo": 8.00}
 
@@ -11,6 +11,7 @@ valor = []
 total = []
 
 quantiitens = [] 
+
 
 
 while True:
@@ -27,15 +28,16 @@ while True:
     carrinho.extend([produto])
     total.append(quantidade * valor)
     quantiitens.append(quantidade)
-    
 
-    
     print(f"TOTAL: R$ {sum(total):.2f}")
 
-print("=-=" * 5,  "CUPOM FISCAL", "=-=" * 5)
+print("-" * 30)
+print('CUPOM FISCAL\n')
+
+print('CÓD ITEM. DESC.\n')
 
 for c in range(0, len(quantiitens)):
-  print(quantiitens[c], carrinho[c])
+  print(c + 1, quantiitens[c],  carrinho[c], total[c])
 
-
+print("-" * 30, "\n")
 print(f"Total a Pagar R$ : {sum(total):.2f}")
